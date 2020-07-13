@@ -21,7 +21,7 @@ type Command struct {
 var mp3Chan = make(chan string, 10)
 var quit = make(chan int)
 
-var addr = flag.String("addr", "localhost:8080", "http service address")
+var addr = flag.String("addr", "localhost:7778", "http service address")
 
 var upgrader = websocket.Upgrader{
 	// cross domain
